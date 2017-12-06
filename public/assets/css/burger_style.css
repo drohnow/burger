@@ -1,0 +1,37 @@
+li {
+  padding: 5px;
+  margin: 5px;
+  width: 33%;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.update-form {
+  padding: 5px;
+  margin: 5px;
+  background: aqua;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+.divBox {
+	
+	width: 33%;
+	height: 200px;
+	border: 1px Black ;
+}
+
+
+
+.divform {
+  font-size: 68px;
+  color: Orange;
+  position: absolute;
+  z-index: 2;
+  top: 5px;
+  left: 550px;
+}

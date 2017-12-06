@@ -1,0 +1,42 @@
+<h1>Eat-Da-Burger</h1>
+
+Order A Burger
+
+<ul>
+  {{#each burger_name}}
+    {{#if devoured}}
+    <li>
+       {{this.id}} {{this.burger_name}} {{this.devoured}} &nbsp;&nbsp;&nbsp;&nbsp {{> burgers/burger-block}}
+    </li>
+  
+    {{/if}}
+  {{/each}}
+</ul>
+
+
+
+
+
+<form action="/api/burgers" method="POST">
+  <textarea type="text" name="burger_name"></textarea>
+
+  <button type="submit">Submit</button>
+</form>
+
+
+
+<ul>
+  {{#each burger_name}}
+    {{#unless devoured}}
+    <li>
+       {{this.id}} {{this.burger_name}} {{this.devoured}} &nbsp;&nbsp;&nbsp;&nbsp {{> burgers/burger-block}}
+    </li>
+  
+    {{/unless}}
+  {{/each}}
+</ul>
+
+
+
+
+
